@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "706062038264",
+    "project_id": "firestore-2adc0",
+    "storage_bucket": "firestore-2adc0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706062038264:android:68889872c43d36c4e5370d",
+        "android_client_info": {
+          "package_name": "com.example.checklistapp2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSnUYlZ054dOaQtIl5YB-FyD8PobsspNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
