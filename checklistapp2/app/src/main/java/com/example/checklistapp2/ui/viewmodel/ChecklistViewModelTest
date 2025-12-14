@@ -1,0 +1,27 @@
+package com.checklistapp2.app.ui.viewmodel
+
+import com.checklistapp2.app.data.repository.ChecklistRepository
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.test.runTest
+import org.junit.Before
+import org.junit.Test
+import org.mockito.Mockito.*
+
+@OptIn(ExperimentalCoroutinesApi::class)
+class ChecklistViewModelTest {
+
+    private lateinit var viewModel: ChecklistViewModel
+    private val repository = mock(ChecklistRepository::class.java)
+
+    @Before
+    fun setup() {
+        viewModel = ChecklistViewModel(repository, userId = 1L)
+    }
+
+    @Test
+    fun addChecklist_callsRepository() = runTest {
+        viewModel.addChecklist("Shopping")
+
+        verify(repository).insertChecklist(any())
+    }
+}
